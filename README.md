@@ -6,13 +6,20 @@ This project is dedicated to the smart contract dataset of CCS2024b. The reposit
 
 ## Dataset Description
 
-Small Dataset:
+### Small Dataset:
 - Contains 110 contract test cases divided into 11 subdatasets.
 - Includes 10 subdatasets with known vulnerabilities in the Top 10 categories.
 - Provides one subdataset with correct test cases.
 
-Real-world Dataset:
+### Real-world Dataset:
 - Hosts 100 test cases derived from Code4rena contest \url{https://github.com/ZhangZhuoSJTU/Web3Bugs}.
+
+## Folder Description
+The dataset is organized into three folders:
++ [labeled/](labeled/): contains our ICSE23 paper summarizing our preliminary results, as well as the supplementary material for the paper.
++ [realworld/](realworld/): contains the bug classification in [bugs.csv](results/bugs.csv) and the description for each contest in [contests.csv](results/contests.csv).
++ [reports/](reports/): contains all the reports provided by code4rena.
+
 
 ## Top 10 categories:
 1. Reentrancy
