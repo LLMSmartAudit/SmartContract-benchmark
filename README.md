@@ -1,5 +1,10 @@
 # CCS2024b-benchmark
-This repository is dedicated to the smart contract dataset of CCS2024b. The repository contains two datasets, including a labelled dataset with 110 annotated cases, and a real-world dataset derived from Code4rena contest.
+<a href="https://openai.com/product/dall-e-2"><img src="resources/logo.png" alt="Logo" align="right" width="82"/></a>
+
+This project is dedicated to the smart contract dataset of CCS2024b. The repository contains two datasets, including a labelled dataset with 110 annotated cases, and a real-world dataset derived from Code4rena contest.
+
+
+## Dataset Description
 
 Small Dataset:
 - Contains 110 contract test cases divided into 11 subdatasets.
@@ -7,7 +12,7 @@ Small Dataset:
 - Provides one subdataset with correct test cases.
 
 Real-world Dataset:
-- Hosts 100 test cases derived from Code4rena contest.
+- Hosts 100 test cases derived from Code4rena contest \url{https://github.com/ZhangZhuoSJTU/Web3Bugs}.
 
 ## Top 10 categories:
 1. Reentrancy
