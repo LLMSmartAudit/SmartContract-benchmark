@@ -17,7 +17,7 @@ This project is dedicated to the smart contract dataset of CCS2024b. The reposit
 ## Folder Description
 The dataset is organized into three folders:
 + [labeled/](labeled/): 110 contract test cases divided into 11 subdataset,  where 10 sub-datasets each focus on a specific common vulnerability type, and the remaining sub-dataset consists of secure contracts.
-+ [realworld/](realworld/): is derived from the Code4rena contests, encompassing 100 vulnerable smart contracts out of an ex- pansive collection of 102 projects and 6,454 contracts in https://github.com/ZhangZhuoSJTU/Web3Bugs.
++ [realworld/](realworld/): is derived from the Code4rena contests, encompassing 100 vulnerable smart contracts out of an expansive collection of 102 projects and 6,454 contracts in https://github.com/ZhangZhuoSJTU/Web3Bugs.
 + [reports/](reports/): contains all the reports.
 
 
