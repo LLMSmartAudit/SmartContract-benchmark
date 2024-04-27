@@ -12,7 +12,7 @@ This project is dedicated to the smart contract dataset of CCS2024b. The reposit
 - Provides one subdataset with correct test cases.
 
 ### Real-world Dataset:
-- Hosts 100 test cases derived from Code4rena contest \url{https://code4rena.com}.
+- Hosts 100 test cases derived from Code4rena contest https://code4rena.com.
 
 ## Folder Description
 The dataset is organized into three folders:
