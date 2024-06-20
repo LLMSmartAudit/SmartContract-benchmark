@@ -115,3 +115,34 @@ The dataset is organized into three folders:
   </tbody>
 </table>
 </div>
+
+## Real-world dataset:
+Here is an overview of the criteria and selection process used for selecting the 100 contracts from Code4rena:
+
+- **Detailed Reports:** Each selected contract must have a corresponding detailed report describing the identified vulnerabilities.
+- **Clear Contributor Attribution:** The reports must clearly attribute the contributions of the individuals who identified the vulnerabilities.
+- **Vulnerability Classification:** Each report must contain at least two vulnerabilities classified as high or medium risk.
+- **Diversity:** The similarity between any two selected contracts did not exceed 80%.
+- **Vulnerability Type Distribution:** At least 10% of the bugs corresponded to each specific type of vulnerability.
+
+In our study, we explored the ability of LLMs to detect a broad range of vulnerability types, including 30 complex logical types. These types include:
+
+- Oracle manipulation
+- Ownership hijacking
+- Centralization risks
+- Single points of failure
+- Minting permissions
+- Funding rate calculation precision
+- Flash loan vulnerabilities
+- Precision loss
+- Dependence on external data
+- Discrepancies in balance calculation
+- Cancellation authority issues
+- Misuse of mapping getter
+- Inefficient state modifications in a loop
+- Incomplete implementation
+- Redundant statements and syntax errors
+- Unpredictable initialization
+- Unnecessary comparison
+- Misuse of `msg.sig` for authorization
+
