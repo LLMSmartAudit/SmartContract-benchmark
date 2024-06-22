@@ -6,7 +6,7 @@ This project is dedicated to the smart contract dataset of CCS2024b. The reposit
 
 ## Dataset Description
 
-### Small Dataset:
+### Labled Dataset:
 - Contains 110 contract test cases divided into 11 subdatasets.
 - Includes 10 subdatasets with known vulnerabilities in the Top 10 categories.
 - Provides one subdataset with correct test cases.
@@ -34,88 +34,6 @@ The dataset is organized into three folders:
 10. bad randomness
 
 
-## Labelled dataset:
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Type</th>
-      <th>Description</th>
-      <th>Number</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Reentrancy</td>
-      <td>This vulnerability occurs when a contract calls an external contract, and the called contract then calls back into the calling contract before the first invocation is finished. </td>
-      <td>10</td>   
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Arithmetic</td>
-      <td>This occurs when an arithmetic opera- tion generates a value that exceeds the range that can be represented within the fixed number of bits designated for integers in the EVM. </td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Unchecked send</td>
-      <td>This vulnerability happens when the call fails accidentally or an attacker forces the call to fail. It is also described as ``unhandled exceptions``, ``exception disorder``, or ``unchecked low-level call``.</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Unsafe delegatecall</td>
-      <td>This vulnerability rises from the DELEGATECALL instruction, which allows a contract to dynamically load code from another contract at runtime.</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Transaction Ordering Dependence</td>
-      <td>This vulnerability, is also described as TOD, arises when a contract’s behaviour depends on the order of transactions.</td>
-      <td>10</td>
-    </tr>
-      <tr>
-      <th>5</th>
-      <td>Time manipulation</td>
-      <td>This vulnerability arises when smart contracts rely on the timestamp information from blocks.</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Bad randomness</td>
-      <td>This vulnerability pertains to the flawed generation of random numbers within smart contracts. Random numbers often influence the decisions or outcomes of contract functionalities. </td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Authorization through tx.origin</td>
-      <td>This vulnerability arises when the tx.origin variable is exploited by attackers. </td>
-      <td>10</td>
-    </tr>
-      <tr>
-      <th>8</th>
-      <td>Unsafe suicidal</td>
-      <td>This vulnerability manifests when the SELFDESTRUCT function is improperly secured and subsequently exploited by attackers. </td>
-      <td>10</td>
-    </tr>
-        <tr>
-      <th>9</th>
-      <td>Gasless send</td>
-      <td>This vulnerability occurs when there’s an insufficient amount of gas to carry out an external call, resulting in the reversion of the transaction.</td>
-      <td>10</td>
-    </tr>
-        <tr>
-      <th>10</th>
-      <td>Safe contracts</td>
-      <td>This subdataset contains no vulnerable contracts</td>
-      <td>10</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
 ## Real-world dataset:
 Here is an overview of the criteria and selection process used for selecting the 100 contracts from Code4rena:
 
@@ -124,6 +42,12 @@ Here is an overview of the criteria and selection process used for selecting the
 - **Vulnerability Classification:** Each report must contain at least two vulnerabilities classified as high or medium risk.
 - **Diversity:** The similarity between any two selected contracts did not exceed 80%.
 - **Vulnerability Type Distribution:** At least 10% of the bugs corresponded to each specific type of vulnerability.
+
+According to [paper](https://ieeexplore.ieee.org/abstract/document/10172700) [1], vulnerabilities in smart contracts can be categorized as either machine-auditable or machine-unauditable. Their survey and experiments indicate that existing tools can detect machine-auditable vulnerabilities, with more than 80% of exploitable bugs falling into this category, as shown in Figure 1. However, these findings primarily consider traditional tools. With the advent of large language models (LLMs), it has become possible to identify machine-unauditable bugs. Similar to human experts, LLMs are starting to demonstrate the ability to detect complex vulnerabilities.
+
+In our study, we selected 10 types of vulnerabilities, with the vulnerable contracts sourced from labeled datasets. For the real-world dataset, we did not limit the types of vulnerabilities. Consequently, we selected 100 contracts from the Code4rena contest, exhibiting a total of 349 high and medium-risk vulnerabilities. More information on the Code4rena contest can be found [here](https://code4rena.com).
+
+<img src='comparison.png' height=400>
 
 In our study, we explored the ability of LLMs to detect a broad range of vulnerability types, including 32 complex logical types as follow:
 
@@ -159,4 +83,7 @@ In our study, we explored the ability of LLMs to detect a broad range of vulnera
 - Redundant condition
 - Lack of functionality
 - Impracticality of exact match
+
+
+
 
