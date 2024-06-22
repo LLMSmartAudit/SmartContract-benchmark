@@ -47,7 +47,7 @@ According to [paper](https://ieeexplore.ieee.org/abstract/document/10172700) [1]
 
 In our study, we selected 10 types of vulnerabilities, with the vulnerable contracts sourced from labeled datasets. For the real-world dataset, we did not limit the types of vulnerabilities. Consequently, we selected 100 contracts from the Code4rena contest, exhibiting a total of 349 high and medium-risk vulnerabilities. More information on the Code4rena contest can be found [here](https://code4rena.com).
 
-<img src='comparison.png' height=100>
+<img src='comparison.png' height=150>
 
 In our study, we explored the ability of LLMs to detect a broad range of vulnerability types, including 32 complex logical types as follow:
 
