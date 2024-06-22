@@ -125,7 +125,7 @@ Here is an overview of the criteria and selection process used for selecting the
 - **Diversity:** The similarity between any two selected contracts did not exceed 80%.
 - **Vulnerability Type Distribution:** At least 10% of the bugs corresponded to each specific type of vulnerability.
 
-In our study, we explored the ability of LLMs to detect a broad range of vulnerability types, including 32 complex logical types. These types include:
+In our study, we explored the ability of LLMs to detect a broad range of vulnerability types, including 32 complex logical types as follow:
 
 - Oracle manipulation
 - Ownership hijacking
