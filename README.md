@@ -1,5 +1,5 @@
 # CCS2024b-benchmark
-<a href="https://openai.com/product/dall-e-2"><img src="resources/logo.png" alt="Logo" align="right" width="82"/></a>
+<a href="https://openai.com/product/dall-e-2"></a>
 
 This project is dedicated to the smart contract dataset of CCS2024b. The repository contains two datasets, including a labelled dataset with 110 annotated cases, and a real-world dataset derived from Code4rena contest.
 
@@ -47,7 +47,7 @@ According to [paper](https://ieeexplore.ieee.org/abstract/document/10172700) [1]
 
 In our study, we selected 10 types of vulnerabilities, with the vulnerable contracts sourced from labeled datasets. For the real-world dataset, we did not limit the types of vulnerabilities. Consequently, we selected 100 contracts from the Code4rena contest, exhibiting a total of 349 high and medium-risk vulnerabilities. More information on the Code4rena contest can be found [here](https://code4rena.com).
 
-<img src='comparison.png' height=400>
+<img src='comparison.png' height=100>
 
 In our study, we explored the ability of LLMs to detect a broad range of vulnerability types, including 32 complex logical types as follow:
 
